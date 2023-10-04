@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Gewinnstufe
+comment1.params=stufe1\ stufe2
+comment1.target=Gewinnstufe(int,\ int)
+comment2.params=anzahlRichtigeFrage
+comment2.target=int\ checkGewinnstufe(int)
+comment3.params=
+comment3.target=int\ getStufe1()
+comment4.params=stufe1
+comment4.target=void\ setStufe1(int)
+comment5.params=
+comment5.target=int\ getStufe2()
+comment6.params=stufe2
+comment6.target=void\ setStufe2(int)
+comment7.params=index
+comment7.target=int\ getGeldbetrag(int)
+numComments=8

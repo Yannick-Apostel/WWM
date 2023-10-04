@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=GUI
+comment1.params=
+comment1.target=GUI()
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=
+comment3.target=void\ starten()
+comment4.params=antwort
+comment4.target=int\ checkinputAntwort(int)
+numComments=5

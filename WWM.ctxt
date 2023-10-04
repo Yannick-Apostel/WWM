@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=WWM
+comment1.params=anzahlZuGenerierenderTestFragen
+comment1.target=WWM(int)
+comment2.params=
+comment2.target=Spiel\ getaktuellesSpiel()
+comment3.params=stufe
+comment3.target=Frage\ gibFrageAuFragenKatalog(int)
+comment4.params=
+comment4.target=void\ erstelleSpiel()
+numComments=5

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Spiel
+comment1.params=
+comment1.target=Spiel()
+comment2.params=eineFrage
+comment2.target=void\ addFrage(Frage)
+comment3.params=
+comment3.target=Frage\ gibdieNaechsteFrage()
+numComments=4
