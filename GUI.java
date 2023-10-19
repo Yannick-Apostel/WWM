@@ -24,7 +24,7 @@ public class GUI {
         System.out.println("Geben Sie die 1.Gewinnstufe ein");
         int stufe1 = input.nextInt();
         System.out.println("Geben Sie die 2.Gewinnstufe ein");
-        int stufe2 = input.nextInt();
+        int stufe2 = input.nextInt();sg
 
         Gewinnstufe stufe = new Gewinnstufe(stufe1, stufe2);
 
