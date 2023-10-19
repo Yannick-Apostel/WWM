@@ -1,5 +1,5 @@
 public class Publikumsjoker {
    public Publikumsjoker() {
-    super();
+    System.out.println("Hallo");
    }
 }
