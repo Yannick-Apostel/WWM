@@ -14,13 +14,13 @@ public class Joker {
         System.out.println("Sie können zwischen diesen Jokern auswählen");
 
         if (!usedFiftyFiftyjoker) {
-            System.out.println("- FiftyFiftyJoker");
+            System.out.println("1. FiftyFiftyJoker");
         }
         if (!usedPublikumsjoker) {
-            System.out.println("- Publikumsjoker");
+            System.out.println("2. Publikumsjoker");
         }
         if (!usedTelefonjoker) {
-            System.out.println("- Telefonjoker");
+            System.out.println("3. Telefonjoker");
         }
         // wähleMöglichkeit();
     }
@@ -32,6 +32,9 @@ public class Joker {
 
         if (eingabe == 1) { // abfrage für fiftyfiftyJoker
             return useFiftyFiftyjoker(antwort1, antwort2, antwort3, richtigeAntwort);
+
+        }
+        else if (eingabe == 2){
 
         }
         input.close();
@@ -71,5 +74,10 @@ public class Joker {
                 break;
         }
        return null;
+    }
+
+    public Antwort usePublikumsjoker(Antwort antwort1, Antwort antwort2, Antwort antwort3, Antwort antwort4){
+        Publikumsjoker publikumsjoker = new Publikumsjoker();
+        return publikumsjoker.AntwortPublikumsjoker(antwort1, antwort2, antwort3, antwort4);
     }
 }
