@@ -35,7 +35,7 @@ public class Joker {
 
         }
         else if (eingabe == 2){
-
+            return usePublikumsjoker(antwort1, antwort2, antwort3, richtigeAntwort);
         }
         input.close();
         return null;
@@ -78,6 +78,16 @@ public class Joker {
 
     public Antwort usePublikumsjoker(Antwort antwort1, Antwort antwort2, Antwort antwort3, Antwort antwort4){
         Publikumsjoker publikumsjoker = new Publikumsjoker();
-        return publikumsjoker.AntwortPublikumsjoker(antwort1, antwort2, antwort3, antwort4);
+        Scanner input = new Scanner(System.in);
+
+        Antwort answet = publikumsjoker.AntwortPublikumsjoker(antwort1, antwort2, antwort3, antwort4);
+        System.out.println("Das Publikum: " +answet);
+        System.out.println("möchten Sie diese Antwort wählen? (J/N)");
+        if(input.next().toLowerCase().equals("j")){
+
+        }
+
+
+        return null;
     }
 }
