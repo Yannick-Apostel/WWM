@@ -30,11 +30,13 @@ public class Joker {
         Scanner input = new Scanner(System.in);
         int eingabe = input.nextInt();
 
-        if (eingabe == 1) { // abfrage für fiftyfiftyJoker
+        if (eingabe == 1) {
+            usedFiftyFiftyjoker = true; // abfrage für fiftyfiftyJoker
             return useFiftyFiftyjoker(antwort1, antwort2, antwort3, richtigeAntwort);
 
         }
         else if (eingabe == 2){
+            usedPublikumsjoker = true;
             return usePublikumsjoker(antwort1, antwort2, antwort3, richtigeAntwort);
         }
         input.close();
