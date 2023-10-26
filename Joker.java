@@ -38,6 +38,9 @@ public class Joker {
         else if (eingabe == 2){
             usedPublikumsjoker = true;
             return usePublikumsjoker(antwort1, antwort2, antwort3, richtigeAntwort);
+        }else if (eingabe == 3){
+            usedTelefonjoker = true;
+            return null;
         }
         input.close();
         return null;
