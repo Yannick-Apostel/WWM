@@ -14,13 +14,13 @@ public class Joker {
         System.out.println("Sie können zwischen diesen Jokern auswählen");
 
         if (!usedFiftyFiftyjoker) {
-            System.out.println("- FiftyFiftyJoker");
+            System.out.println("1. FiftyFiftyJoker");
         }
         if (!usedPublikumsjoker) {
-            System.out.println("- Publikumsjoker");
+            System.out.println("2. Publikumsjoker");
         }
         if (!usedTelefonjoker) {
-            System.out.println("- Telefonjoker");
+            System.out.println("3. Telefonjoker");
         }
         // wähleMöglichkeit();
     }
@@ -30,9 +30,14 @@ public class Joker {
         Scanner input = new Scanner(System.in);
         int eingabe = input.nextInt();
 
-        if (eingabe == 1) { // abfrage für fiftyfiftyJoker
+        if (eingabe == 1) {
+            usedFiftyFiftyjoker = true; // abfrage für fiftyfiftyJoker
             return useFiftyFiftyjoker(antwort1, antwort2, antwort3, richtigeAntwort);
 
+        }
+        else if (eingabe == 2){
+            usedPublikumsjoker = true;
+            return usePublikumsjoker(antwort1, antwort2, antwort3, richtigeAntwort);
         }
         input.close();
         return null;
@@ -71,5 +76,34 @@ public class Joker {
                 break;
         }
        return null;
+    }
+
+    public Antwort usePublikumsjoker(Antwort antwort1, Antwort antwort2, Antwort antwort3, Antwort antwort4){
+        Publikumsjoker publikumsjoker = new Publikumsjoker();
+        Scanner input = new Scanner(System.in);
+
+        Antwort answet = publikumsjoker.AntwortPublikumsjoker(antwort1, antwort2, antwort3, antwort4);
+        System.out.println("Das Publikum: " +answet);
+        System.out.println("möchten Sie diese Antwort wählen? (J/N)");
+        if(input.next().toLowerCase().equals("j")){
+            return answet;
+        }else { 
+            System.out.println("Folgende Antworten stehen zur Verfügung: ");
+            System.out.println(antwort1);
+            System.out.println(antwort2);
+            System.out.println(antwort3);
+            System.out.println(antwort4);
+
+            int innumb = input.nextInt();
+            switch (innumb){
+                case 1: return antwort1;
+                case 2: return antwort2;
+                case 3: return antwort3;
+                case 4: return antwort4;
+            }
+        }
+
+
+        return null;
     }
 }

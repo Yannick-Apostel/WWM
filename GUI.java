@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.logging.Handler;
 
 public class GUI {
     WWM einWWM = new WWM(500);
