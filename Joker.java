@@ -84,7 +84,21 @@ public class Joker {
         System.out.println("Das Publikum: " +answet);
         System.out.println("möchten Sie diese Antwort wählen? (J/N)");
         if(input.next().toLowerCase().equals("j")){
+            return answet;
+        }else { 
+            System.out.println("Folgende Antworten stehen zur Verfügung: ");
+            System.out.println(antwort1);
+            System.out.println(antwort2);
+            System.out.println(antwort3);
+            System.out.println(antwort4);
 
+            int innumb = input.nextInt();
+            switch (innumb){
+                case 1: return antwort1;
+                case 2: return antwort2;
+                case 3: return antwort3;
+                case 4: return antwort4;
+            }
         }
 
 
