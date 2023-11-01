@@ -117,10 +117,10 @@ public class Joker {
         Antwort antwortTeleJ=null;
         Scanner input = new Scanner(System.in);
          switch (antwort){
-                case 1:  antwortTeleJ = antwort1; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort1 ); 
-                case 2:  antwortTeleJ = antwort2; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort2 ); 
-                case 3:  antwortTeleJ = antwort3; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort3 ); 
-                case 4:  antwortTeleJ = antwort4; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort4 ); 
+                case 1:  antwortTeleJ = antwort1; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort1.getAntwortText() ); 
+                case 2:  antwortTeleJ = antwort2; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort2.getAntwortText() ); 
+                case 3:  antwortTeleJ = antwort3; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort3.getAntwortText() ); 
+                case 4:  antwortTeleJ = antwort4; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort4.getAntwortText() ); 
             }
 
             System.out.println("Möchten Sie diese Antwort wählen?  (J/N)");
