@@ -18,7 +18,7 @@ public class Telefonjoker {
         System.out.println("Sie können zwischen folgenden Kontakten wählen: ");
         String Person = "";
         for (int i = 0; i < Kontakte.size(); i++) {
-            System.out.println((i + 1) + Kontakte.get(i));
+            System.out.println((i + 1) + " "+ Kontakte.get(i));
         }
 
         Scanner input = new Scanner(System.in);

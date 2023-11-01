@@ -118,9 +118,9 @@ public class Joker {
         Scanner input = new Scanner(System.in);
          switch (antwort){
                 case 1:  antwortTeleJ = antwort1; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort1 ); 
-                case 2:  antwortTeleJ = antwort1; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort2 ); 
-                case 3:  antwortTeleJ = antwort1; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort3 ); 
-                case 4:  antwortTeleJ = antwort1; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort4 ); 
+                case 2:  antwortTeleJ = antwort2; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort2 ); 
+                case 3:  antwortTeleJ = antwort3; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort3 ); 
+                case 4:  antwortTeleJ = antwort4; System.out.print("Ihr Telefonjoker wählt die Antwort: " +antwort4 ); 
             }
 
             System.out.println("Möchten Sie diese Antwort wählen?  (J/N)");
