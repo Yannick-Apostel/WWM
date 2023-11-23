@@ -7,7 +7,7 @@ public class GUI {
 
     public GUI() {
 
-        starten();
+        starten("test");
     }
 
     public static void main(String[] args) {
