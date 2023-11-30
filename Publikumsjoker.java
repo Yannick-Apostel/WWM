@@ -1,19 +1,27 @@
+import java.util.Random;
+
 public class Publikumsjoker {
-   
-   
-   public  Antwort AntwortPublikumsjoker(Antwort a1, Antwort a2, Antwort a3, Antwort a4) {
-     Services zufallsgen = new Services();
 
-     int zufallzahl = zufallsgen.erzeugeZufallszahl(1, 4);
+  public int[] generiereZahlenMitSumme(int anzahlZahlen, int zielSumme) {
+    Random rand = new Random();
+    int[] zahlen = new int[anzahlZahlen];
+    int aktuelleSumme = 0;
 
-     switch(zufallzahl){
-      case 1: System.out.println("A1");
-       return a1;
-      case 2:System.out.println("A2"); return a2;
-      case 3: System.out.println("A3"); return a3; 
-      case 4: System.out.println("A4"); return a4;
-     }
+    
+    for (int i = 0; i < anzahlZahlen - 1; i++) {
+      zahlen[i] = rand.nextInt(zielSumme - aktuelleSumme);
+      aktuelleSumme += zahlen[i];
+    }
 
-     return null;
-   }
+    
+    zahlen[anzahlZahlen - 1] = zielSumme - aktuelleSumme;
+
+    return zahlen;
+  }
+
+  public void ausgabe(int[] zahlen){
+    for (int i : zahlen) {
+      System.out.println(i);
+    }
+  }
 }
