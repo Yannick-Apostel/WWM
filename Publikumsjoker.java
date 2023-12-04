@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class Publikumsjoker {
 
+
   public int[] generiereZahlenMitSumme(int anzahlZahlen, int zielSumme) {
     Random rand = new Random();
     int[] zahlen = new int[anzahlZahlen];
@@ -23,5 +24,5 @@ public class Publikumsjoker {
     for (int i : zahlen) {
       System.out.println(i);
     }
-  }
+
 }
