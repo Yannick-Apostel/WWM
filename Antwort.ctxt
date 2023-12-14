@@ -1,15 +1,15 @@
 #BlueJ class context
 comment0.target=Antwort
-comment1.params=einAntwortText\ istAnwortRichtig
-comment1.target=Antwort(java.lang.String,\ boolean)
-comment2.params=
-comment2.target=Antwort()
-comment3.params=
-comment3.target=java.lang.String\ getAntwortText()
-comment4.params=einAntwortText
-comment4.target=void\ setAnwortText(java.lang.String)
-comment5.params=
-comment5.target=boolean\ getIstAnwortRichtig()
-comment6.params=istAnwortRichtig
-comment6.target=void\ setIstAnwortRichtig(boolean)
+comment1.params=
+comment1.target=Antwort()
+comment2.params=einAntwortText\ istAnwortRichtig
+comment2.target=Antwort(java.lang.String,\ boolean)
+comment3.params=einText
+comment3.target=void\ setText(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getText()
+comment5.params=istRichtig
+comment5.target=void\ setIstRichtig(boolean)
+comment6.params=
+comment6.target=boolean\ getIstRichtig()
 numComments=7

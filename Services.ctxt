@@ -2,4 +2,10 @@
 comment0.target=Services
 comment1.params=min\ max
 comment1.target=int\ erzeugeZufallszahl(int,\ int)
-numComments=2
+comment2.params=
+comment2.target=void\ leseFragen()
+comment3.params=stufe
+comment3.target=void\ setRandomFrage(int)
+comment4.params=
+comment4.target=java.lang.String[]\ getCurrentFrage()
+numComments=5

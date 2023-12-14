@@ -1,32 +1,27 @@
-
-
 public class Antwort
 {
    private String antwortText;
-   private boolean istAnwortRichtig =false;
-   
-   public Antwort (String einAntwortText,boolean istAnwortRichtig ){
-       setAnwortText(einAntwortText);
-       setIstAnwortRichtig(istAnwortRichtig);
-   }
+   private boolean istRichtig = false;
    
    public Antwort(){
        
    }
+   public Antwort (String einAntwortText,boolean istAnwortRichtig ){
+       setText(einAntwortText);
+       setIstRichtig(istAnwortRichtig);
+   }
    
-   public String getAntwortText (){
+   public void setText(String einText){
+       antwortText= einText;
+   }
+   public String getText (){
        return antwortText;
    }
    
-   public void setAnwortText(String einAntwortText){
-       antwortText= einAntwortText;
+   public void setIstRichtig(boolean istRichtig){
+       this.istRichtig = istRichtig;
    }
-   
-   public boolean getIstAnwortRichtig(){
-       return istAnwortRichtig;
-   }
-   
-   public void setIstAnwortRichtig(boolean istAnwortRichtig){
-       this.istAnwortRichtig = istAnwortRichtig;
+   public boolean getIstRichtig(){
+       return istRichtig;
    }
 }
