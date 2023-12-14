@@ -82,31 +82,31 @@ public class Joker {
        return null;
     }
 
-    public Antwort usePublikumsjoker(Antwort antwort1, Antwort antwort2, Antwort antwort3, Antwort antwort4){
+    public Antwort usePublikumsjoker(Antwort antwort1, Antwort antwort2, Antwort antwort3, Antwort antwort4) {
         Publikumsjoker publikumsjoker = new Publikumsjoker();
         Scanner input = new Scanner(System.in);
 
-        Antwort answet = publikumsjoker.AntwortPublikumsjoker(antwort1, antwort2, antwort3, antwort4);
-        System.out.println("Das Publikum: " +answet);
-        System.out.println("möchten Sie diese Antwort wählen? (J/N)");
-        if(input.next().toLowerCase().equals("j")){
-            return answet;
-        }else { 
-            System.out.println("Folgende Antworten stehen zur Verfügung: ");
-            System.out.println(antwort1);
-            System.out.println(antwort2);
-            System.out.println(antwort3);
-            System.out.println(antwort4);
+        
+        int[] wahrscheinlichkieten = publikumsjoker.generiereZahlenMitSumme(4, 100);
+        System.out.println("Das Publikum zeigt folgende Werte ");
+        System.out.println(antwort1 +" " + wahrscheinlichkieten[0] +"%");
+        System.out.println(antwort2 +" " + wahrscheinlichkieten[1] +"%");
+        System.out.println(antwort3 +" " + wahrscheinlichkieten[2] +"%");
+        System.out.println(antwort4 +" " + wahrscheinlichkieten[3] +"%");
+        System.out.println("Welcher dieser Antworten möchten Sie wählen?");
 
             int innumb = input.nextInt();
-            switch (innumb){
-                case 1: return antwort1;
-                case 2: return antwort2;
-                case 3: return antwort3;
-                case 4: return antwort4;
+            switch (innumb) {
+                case 1:
+                    return antwort1;
+                case 2:
+                    return antwort2;
+                case 3:
+                    return antwort3;
+                case 4:
+                    return antwort4;
             }
-        }
-
+        
 
         return null;
     }
@@ -144,4 +144,3 @@ public class Joker {
         return null;
 
     }
-}
