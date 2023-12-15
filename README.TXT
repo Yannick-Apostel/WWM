@@ -7,7 +7,7 @@ zumindest die folgenden Angaben umfassen:
 ------------------------------------------------------------------------
 
 PROJEKTBEZEICHNUNG:
-PROJEKTZWECK:yannick mag sahnee
+PROJEKTZWECK:yannick mag sahneee
 VERSION oder DATUM:
 WIE IST DAS PROJEKT ZU STARTEN:
 AUTOR(EN):
