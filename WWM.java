@@ -7,9 +7,9 @@ public class WWM
     
     public WWM(int anzahlZuGenerierenderTestFragen){
         
-        if(anzahlZuGenerierenderTestFragen>0){
+        //if(anzahlZuGenerierenderTestFragen>0){
             
-            int zufallszahlTitel, zufahllszahlFragenText, zufallsZahllStufe;
+           /* int zufallszahlTitel, zufahllszahlFragenText, zufallsZahllStufe;
             int zuFallsZahlText;
             boolean zuFälligRichtigOderFalsch;
             
@@ -30,17 +30,31 @@ public class WWM
                 eineFrage.addAntwort(new Integer(zuFallsZahlText).toString(),false);
                 
                 fragenKatalog.add(eineFrage);
-            }
+            }*/
             
-            // Frage eineFrage = new Frage("Weltmeister","Wer war am häuigsten FIFA-Weltmeister?",3);
-            // fragenKatalog.add(eineFrage);
-            // eineFrage = new Frage("Hauptstadt","Wie heißt die Hauptstadt von Deutschland?",1);
-            // fragenKatalog.add(eineFrage);
-            // eineFrage = new Frage("Präsident","Welcher Präsident ist ein Berliner",5);
-            // fragenKatalog.add(eineFrage);
+            Frage eineFrage = new Frage("IF it works dont touch it","IF it works dont touch it",3);
+            //IF it works dont touch it!
+            fragenKatalog.add(eineFrage);
+
+
+            Frage Frage1= new Frage(" ... Apostel?","... Apostel?",3);
+            Frage1.addAntwort("Yannick",true);
+            Frage1.addAntwort("Jannick",false);
+            Frage1.addAntwort("Gannick",false);
+            Frage1.addAntwort("Cannick",false);
+            fragenKatalog.add(Frage1);
+
+            Frage Frage2= new Frage("5+5","5+5=?",3);
+            Frage2.addAntwort("4",false);
+            Frage2.addAntwort("6",false);
+            Frage2.addAntwort("5",false);
+            Frage2.addAntwort("10",true);
+            fragenKatalog.add(Frage2);
+
             
-            // erstelleSpiel();
-        }
+            
+            erstelleSpiel();
+        //}
         
     }
 
