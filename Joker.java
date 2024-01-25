@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Joker {
 
@@ -64,10 +64,20 @@ public class Joker {
         fiftyfiftyJoker Joker = new fiftyfiftyJoker(antwort1, antwort2, antwort3, richtigeAntwort);
         Scanner input = new Scanner(System.in);
 
-        System.out.println(Joker.getFalscheAntwort().getAntwortText());
-        System.out.println(Joker.getRichtigeAntwort().getAntwortText()); // TODO : Zufällig richtige und Falsche Antwort
-                                                                         // wiedergeben
 
+        Random random = new Random();
+
+      
+        int randomNumber = random.nextInt(2) + 1;
+        if(randomNumber==1){
+            System.out.println(Joker.getFalscheAntwort().getAntwortText());
+            System.out.println(Joker.getRichtigeAntwort().getAntwortText());
+        }else{
+            System.out.println(Joker.getRichtigeAntwort().getAntwortText());
+            System.out.println(Joker.getFalscheAntwort().getAntwortText());
+        }
+        
+        
         int antwort = input.nextInt();
         switch (antwort) {
             case 1:
